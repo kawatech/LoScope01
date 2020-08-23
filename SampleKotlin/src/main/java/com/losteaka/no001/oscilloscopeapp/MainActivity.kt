@@ -192,7 +192,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent)            // これをマスクすると、アプリ停止はしないが。
         }
 
-// これはコンパイルできるが、動作はしない。
+// これはコンパイルできるが、動作はしない。　　
         /* --------------------------------------------------------------------------------
         fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
             return if (keyCode == KeyEvent.KEYCODE_BACK) {
