@@ -276,6 +276,8 @@ import kotlin.experimental.and
             else {
                 start_btn.text ="START"
                 save_btn.isEnabled = true
+                // トースト、STOP表示
+                Toast.makeText(applicationContext, "STOP", Toast.LENGTH_SHORT).show()
             }
         }
 

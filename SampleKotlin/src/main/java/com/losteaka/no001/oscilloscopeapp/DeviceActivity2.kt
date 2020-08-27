@@ -246,6 +246,9 @@ class DeviceActivity2 : AppCompatActivity(), OnBluetoothEventCallback, View.OnCl
                 start_btn.text ="STOP"
                 save_btn.isEnabled = false
 
+                // ここは表示される
+                Toast.makeText(applicationContext, "START", Toast.LENGTH_SHORT).show()
+
                 // FileSave カウンタをクリアして、配列もクリアする
                 saveCount = 0L
                 saveOffset = 0
@@ -259,6 +262,8 @@ class DeviceActivity2 : AppCompatActivity(), OnBluetoothEventCallback, View.OnCl
             else {
                 start_btn.text ="START"
                 save_btn.isEnabled = true
+                // トースト、STOP表示
+                Toast.makeText(applicationContext, "STOP", Toast.LENGTH_SHORT).show()
             }
         }
 
