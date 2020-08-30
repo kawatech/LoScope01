@@ -48,8 +48,8 @@ class BitmapActivity : AppCompatActivity(), View.OnClickListener {
     private var mImgOriginal: ImageView? = null
 
     //    private ImageView mImgBlackWhite;
-    private var mService: BluetoothService? = null
-    private val imageBitmap: Bitmap? = null
+//    private var mService: BluetoothService? = null
+//    private val imageBitmap: Bitmap? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bitmap)
@@ -66,7 +66,7 @@ class BitmapActivity : AppCompatActivity(), View.OnClickListener {
         // FloatingActionButtonは削除、xmlからも削除
         //      mFab = (FloatingActionButton) findViewById(R.id.fab);
         //      mFab.setOnClickListener(this);
-        mService = BluetoothService.getDefaultInstance()
+//        mService = BluetoothService.getDefaultInstance()
         mImgOriginal = findViewById<View>(R.id.img_original) as ImageView
         //      mImgBlackWhite = (ImageView) findViewById(R.id.img_blackwhite);
         object : Thread() {
