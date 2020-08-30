@@ -4,14 +4,16 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.android.gms.oss-licenses-plugin'            // kawa OSS
 
 android {
-    compileSdkVersion 26
+   // compileSdkVersion 26
+    compileSdkVersion 29                // GooglePlay
     buildToolsVersion "26.0.3"
 
     defaultConfig {
         applicationId "com.losteaka.no001.oscilloscopeapp"
      //   minSdkVersion 21
        minSdkVersion 24
-        targetSdkVersion 26
+    //    targetSdkVersion 26
+        targetSdkVersion 29                // GooglePlay
         versionCode 1
         versionName "1.0"
 
